@@ -5,3 +5,4 @@ matplotlib
 PyMuPDF
 requests
 beautifulsoup4
+gunicorn
