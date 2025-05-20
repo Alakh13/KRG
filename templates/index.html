@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Knowledge Graph Generator</title>
+</head>
+<body>
+    <h1>Knowledge Representation Graph Generator</h1>
+    <form method="post" enctype="multipart/form-data">
+        <label>Select Input Type:</label><br>
+        <input type="radio" name="input_type" value="pdf" checked> PDF File<br>
+        <input type="radio" name="input_type" value="url"> Web URL<br>
+        <input type="radio" name="input_type" value="text"> Text Input<br><br>
+
+        <input type="file" name="file"><br><br>
+        <input type="text" name="url_input" placeholder="Enter URL"><br><br>
+        <textarea name="text_input" rows="10" cols="50" placeholder="Paste your text here..."></textarea><br><br>
+
+        <input type="submit" value="Generate Graph">
+    </form>
+
+    {% if graph_url %}
+        <h2>Knowledge Graph:</h2>
+        <img src="{{ graph_url }}" width="800">
+    {% endif %}
+</body>
+</html>

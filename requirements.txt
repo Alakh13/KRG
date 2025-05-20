@@ -1,0 +1,7 @@
+Flask
+spacy==3.7.2
+networkx
+matplotlib
+PyMuPDF
+requests
+beautifulsoup4
